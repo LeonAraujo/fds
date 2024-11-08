@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Slabo+13px&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            height: 12vw;
+            background-color: #333;
+        }
+        header h1 {
+            text-align: center;
+            padding: 16px;
+            font-family: "Poppins", serif;
+            font-weight: 400;
+            font-style: normal;
+            color: #fff;
+
+        }
+        .navbar {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 25pt;
+            font-family: "Poppins", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .navbar li p {
+            color: #fff;
+        }
+        .navbar li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .navbar li a:hover{
+            text-decoration: underline;
+        }
+        .search_bar {
+            padding: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .search_bar input {
+            font-family: "Poppins", serif;
+            font-weight: 400;
+            font-style: normal;
+            width: 300px;
+            padding: 10px;
+            border: 2px solid #ccc;
+            border-radius: 25px;
+            font-size: 16px;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+        .search_bar input:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+        .search_bar button {
+            font-family: "Poppins", serif;
+            font-weight: 400;
+            font-style: normal;
+            padding: 10px 20px;
+            margin-left: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .search_bar button:hover {
+            background-color: #ffffff;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SiteLoja</h1>
+        <ul class="navbar">
+            <li><a href="#">Sign In</a></li>
+            <li><a href="#">Sign Up</a></li>
+            <li><p>|</p></li>
+            <li><a href="#">Download on Win64x</a></li>
+            <li><a href="#">Download on MacOS</a></li>
+            <li><a href="#">Download on Linux</a></li>
+        </ul>
+        <div class="search_bar">
+            <form>
+                <input type="search" id="barra_pesquisa" placeholder="Digite sua pesquisa...">
+                <button>Buscar</button>
+            </form>
+        </div>
+    </header>
+</body>
+</html>
